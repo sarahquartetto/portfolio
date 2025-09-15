@@ -20,18 +20,21 @@ export const translations = {
   // About Section
   about: {
     title: 'About Me',
-    paragraph1: 'I\'m a passionate web developer with a love for creating beautiful, functional digital experiences. With expertise in modern web technologies, I bring ideas to life through clean code and innovative solutions.',
-    paragraph2: 'When I\'m not coding, you can find me exploring the Swiss Alps, experimenting with new recipes, or diving into the latest tech trends. I believe in continuous learning and staying curious about the ever-evolving world of web development.',
+    paragraph1: 'After 15 years of experience in the audiovisual production, marketing, and digital communications sectors, I completed my career transition into web development. I now apply my technical, creative, and interpersonal skills to develop dynamic, responsive, and user-centered web applications.',
+    paragraph2: 'Having worked daily with clients from diverse backgrounds and cultures, I have developed a strong aptitude for communication and client relationship management. I consider this skill an essential asset in a professional environment.',
+    paragraph3: 'Incorporating AI technologies into my development process, I continue to learn and adapt to new technologies to design effective, sustainable, and responsible solutions.',
     highlights: {
       cleanCode: 'Clean Code',
-      collaboration: 'Collaboration'
+      cleanCodeDesc: 'Writing maintainable, efficient code that stands the test of time',
+      collaboration: 'Collaboration',
+      collaborationDesc: 'Working effectively with teams in a positive atmosphere'
     }
   },
 
   // Skills Section
   skills: {
     title: 'Skills & Technologies',
-    description: 'I work with modern technologies to build <span class="font-bold">Full Stack</span> applications that are both beautiful and functional.'
+    description: 'Frontend, Backend, <span class="font-bold">Full Stack</span>'
   },
 
   // Projects Section
@@ -48,9 +51,9 @@ export const translations = {
     getInTouch: 'Get In Touch',
     emailLabel: 'Email',
     locationLabel: 'Location',
-    locationValue: 'Switzerland',
+    locationValue: 'Primarily remote',
     responseTime: 'Response Time',
-    responseTimeValue: 'Within 24 hours',
+    responseTimeValue: 'Usually within 24 hours',
     yourName: 'Your Name',
     namePlaceholder: 'Enter your name',
     emailAddress: 'Email Address',

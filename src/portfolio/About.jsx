@@ -6,9 +6,11 @@ import workImg from '../assets/Work.jpg'
 export default function About() {
   const { t } = useLanguage()
 
+  const showHighlights = false
+
   const highlightsList = [
-    { icon: Code, title: t.about.highlights.cleanCode, description: 'Writing maintainable, efficient code that stands the test of time' },
-    { icon: Users, title: t.about.highlights.collaboration, description: 'Working effectively with teams in a positive atmosphere' },
+    { icon: Code, title: t.about.highlights.cleanCode, description: t.about.highlights.cleanCodeDesc },
+    { icon: Users, title: t.about.highlights.collaboration, description: t.about.highlights.collaborationDesc },
   ]
 
   return (
@@ -33,22 +35,27 @@ export default function About() {
                 <p>
                   {t.about.paragraph2}
                 </p>
+                <p>
+                  {t.about.paragraph3}
+                </p>
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6">
-              {highlightsList.map((item, index) => (
-                <div key={index} className="p-6 rounded-2xl bg-white/70 backdrop-blur-sm border border-stone-200/50 hover:shadow-lg transition-all duration-300 hover:scale-105">
-                  <div className="flex items-center gap-4 mb-3">
-                    <div className="p-2 rounded-lg bg-amber-100">
-                      <item.icon className="w-5 h-5 text-amber-700" />
+            {/*{showHighlights && (
+              <div className="grid md:grid-cols-2 gap-6">
+                {highlightsList.map((item, index) => (
+                  <div key={index} className="p-6 rounded-2xl bg-white/70 backdrop-blur-sm border border-stone-200/50 hover:shadow-lg transition-all duration-300 hover:scale-105">
+                    <div className="flex items-center gap-4 mb-3">
+                      <div className="p-2 rounded-lg bg-amber-100">
+                        <item.icon className="w-5 h-5 text-amber-700" />
+                      </div>
+                      <h3 className="font-semibold text-stone-800">{item.title}</h3>
                     </div>
-                    <h3 className="font-semibold text-stone-800">{item.title}</h3>
+                    <p className="text-stone-600 text-sm leading-relaxed">{item.description}</p>
                   </div>
-                  <p className="text-stone-600 text-sm leading-relaxed">{item.description}</p>
-                </div>
-              ))}
-            </div>
+                ))}
+              </div>
+            )}*/}
           </div>
         </div>
       </div>

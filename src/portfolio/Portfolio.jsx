@@ -21,7 +21,7 @@ export default function Portfolio() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="pt-0">
-              <p className="text-stone-400">© {new Date().getFullYear()} Sarah Quartetto. {t.footer.copyright}</p>
+              <p className="text-stone-400">© {new Date().getFullYear()} Sarah Tech Lab. {t.footer.copyright}</p>
               <div className="mt-2">
                 <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-stone-700/50 text-stone-300 text-sm">
                   🇨🇭 {t.footer.swissMade}

@@ -20,24 +20,27 @@ export const translations = {
   // About Section
   about: {
     title: 'À propos de moi',
-    paragraph1: 'Je suis une développeuse web passionnée qui aime créer des expériences numériques belles et fonctionnelles. Avec une expertise dans les technologies web modernes, je donne vie aux idées grâce à un code propre et des solutions innovantes.',
-    paragraph2: 'Quand je ne code pas, vous pouvez me trouver en train d\'explorer les Alpes suisses, d\'expérimenter de nouvelles recettes ou de plonger dans les dernières tendances technologiques. Je crois en l\'apprentissage continu et en rester curieuse du monde en constante évolution du développement web.',
+    paragraph1: 'Après 15 ans de carrière dans les secteurs de la production audiovisuelle, du marketing et de la communication digitale, j\'ai achevé ma reconversion professionnelle vers le développement web. J\'applique désormais mes compétences techniques, créatives et relationnelles pour développer des applications web dynamiques, réactives et centrées sur l\'utilisateur. ',
+    paragraph2: 'Ayant travaillé quotidiennement avec des clients issus d\'environnements et de cultures très variés, j\'ai développé une forte aptitude à la communication et à la gestion de la relation client. Je considère cette compétence comme un atout essentiel dans un environnement professionnel. ',
+    paragraph3: 'Incorporant l\'IA dans ma démarche de développement, je continue d\'apprendre et de m\'adapter aux nouvelles technologies pour concevoir des solutions efficaces, durables et responsables.',
     highlights: {
-      cleanCode: 'Code Propre',
-      collaboration: 'Collaboration'
+      cleanCode: 'Code propre',
+      cleanCodeDesc: 'Écrire un code propre, performant capable de résister à l\'épreuve du temps',
+      collaboration: 'Collaboration',
+      collaborationDesc: 'Travailler efficacement en équipe et dans la bienveillance'
     }
   },
 
   // Skills Section
   skills: {
     title: 'Compétences & Technologies',
-    description: 'Je travaille avec des technologies modernes pour construire des applications <span class="font-bold">Full Stack</span> à la fois belles et fonctionnelles.'
+    description: 'Frontend, Backend, <span class="font-bold">Full Stack</span>'
   },
 
   // Projects Section
   projects: {
     title: 'Projets en vedette',
-    subtitle: 'Un aperçu de mes travaux récents et projets personnels'
+    subtitle: 'Travaux récents et projets personnels'
   },
 
   // Contact Section
@@ -48,9 +51,9 @@ export const translations = {
     getInTouch: 'Me contacter',
     emailLabel: 'Email',
     locationLabel: 'Localisation',
-    locationValue: 'Suisse',
+    locationValue: 'Principalement en télétravail',
     responseTime: 'Temps de réponse',
-    responseTimeValue: 'Sous 24 heures',
+    responseTimeValue: 'Généralement sous 24 heures',
     yourName: 'Votre nom',
     namePlaceholder: 'Entrez votre nom',
     emailAddress: 'Adresse email',
@@ -67,6 +70,6 @@ export const translations = {
   // Footer
   footer: {
     copyright: 'Tous droits réservés.',
-    swissMade: 'Fabriqué en Suisse'
+    swissMade: 'Swiss Made'
   }
 }

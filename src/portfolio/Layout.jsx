@@ -39,7 +39,7 @@ export default function Layout({ children }) {
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center">
               <Link to="/" className="text-2xl font-bold text-stone-800 hover:text-stone-600 transition-colors">
-                Welcome
+                Sarah Tech Lab
               </Link>
             </div>
 
