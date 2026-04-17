@@ -4,7 +4,7 @@ import { ExternalLink, Github, Tag } from 'lucide-react'
 import { useLanguage } from '../contexts/LanguageContext'
 
 export default function Projects() {
-  const { t } = useLanguage()
+  const { t, language } = useLanguage()
 
   return (
     <section id="projects" className="py-24">
@@ -16,12 +16,17 @@ export default function Projects() {
 
         <div className="grid gap-8 md:grid-cols-2">
           {projects.map((project) => (
+            (() => {
+              const title = project?.title?.[language] ?? project?.title?.en ?? project?.title
+              const description = project?.description?.[language] ?? project?.description?.en ?? project?.description
+
+              return (
             <div key={project.slug} className="group overflow-hidden rounded-3xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500 border border-stone-200/50">
               <div className="aspect-video overflow-hidden bg-gradient-to-br from-stone-200 to-amber-100 relative">
                 {project.image ? (
                   <img 
                     src={project.image} 
-                    alt={project.title} 
+                    alt={title} 
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
                     loading="lazy"
                     decoding="async"
@@ -36,8 +41,8 @@ export default function Projects() {
               <div className="p-8 space-y-4">
                 <div className="flex items-start justify-between gap-4">
                   <div className="space-y-3 flex-1">
-                    <h3 className="text-2xl font-bold text-stone-800 group-hover:text-amber-700 transition-colors">{project.title}</h3>
-                    <p className="text-stone-600 leading-relaxed">{project.description}</p>
+                    <h3 className="text-2xl font-bold text-stone-800 group-hover:text-amber-700 transition-colors">{title}</h3>
+                    <p className="text-stone-600 leading-relaxed">{description}</p>
                     {project.tags && project.tags.length > 0 && (
                       <div className="flex items-center gap-2 flex-wrap">
                         <Tag className="w-4 h-4 text-stone-500" />
@@ -64,6 +69,8 @@ export default function Projects() {
                 </div>
               </div>
             </div>
+              )
+            })()
           ))}
         </div>
       </div>

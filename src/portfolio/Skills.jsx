@@ -3,7 +3,7 @@ import { useLanguage } from '../contexts/LanguageContext'
 
 // Import icons
 import javascriptIcon from '../assets/web dev icons/javascript-logo-javascript-icon-transparent-free-png.webp'
-import typescriptIcon from '../assets/web dev icons/Typescript.png'
+import wordpressIcon from '../assets/web dev icons/wordpress.png'
 import reactIcon from '../assets/web dev icons/React-icon.svg.png'
 import nodeIcon from '../assets/web dev icons/node.png'
 import postgresqlIcon from '../assets/web dev icons/free-postgresql-icon-svg-download-png-1175120.webp'
@@ -18,12 +18,12 @@ export default function Skills() {
 
   const tools = [
     { name: 'JavaScript', icon: javascriptIcon },
-    { name: 'TypeScript', icon: typescriptIcon },
     { name: 'React', icon: reactIcon },
     { name: 'Node', icon: nodeIcon },
     { name: 'PostgreSQL', icon: postgresqlIcon },
     { name: 'MongoDB', icon: mongodbIcon },
     { name: 'REST APIs', icon: restApiIcon },
+    { name: 'Wordpress', icon: wordpressIcon },
   ]
 
   return (
