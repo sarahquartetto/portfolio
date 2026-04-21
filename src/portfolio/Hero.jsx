@@ -1,5 +1,5 @@
 import React from 'react'
-import { ArrowDown, Github, Linkedin, Mail, MapPin } from 'lucide-react'
+import { ArrowDown, MapPin } from 'lucide-react'
 import sarahImg from '../assets/Sarah2.jpg'
 import { useLanguage } from '../contexts/LanguageContext'
 
@@ -52,17 +52,6 @@ export default function Hero() {
               </button>
             </div>
 
-            <div className="flex gap-4 pt-4">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-stone-100 hover:bg-amber-100 text-stone-600 hover:text-amber-700 transition-all duration-300 hover:scale-110">
-                <Github className="w-5 h-5" />
-              </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-stone-100 hover:bg-amber-100 text-stone-600 hover:text-amber-700 transition-all duration-300 hover:scale-110">
-                <Linkedin className="w-5 h-5" />
-              </a>
-              <a href="mailto:zara.quartz@gmail.com" className="p-3 rounded-full bg-stone-100 hover:bg-amber-100 text-stone-600 hover:text-amber-700 transition-all duration-300 hover:scale-110">
-                <Mail className="w-5 h-5" />
-              </a>
-            </div>
           </div>
 
           <div className="relative flex justify-center lg:justify-end">
