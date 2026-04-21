@@ -70,7 +70,7 @@ export default function Contact() {
                 <div className="p-3 rounded-full bg-amber-100 text-amber-700"><Mail className="w-6 h-6" /></div>
                 <div>
                   <h4 className="font-semibold text-stone-800">{t.contact.emailLabel}</h4>
-                  <p className="text-stone-600">sarahq.connect@gmail.com</p>
+                  <p className="text-stone-600">contact@sarah-tech-lab.ch</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
