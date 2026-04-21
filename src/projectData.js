@@ -13,8 +13,8 @@ const projects = [
       fr: 'Application de prise de notes type "Google Keep" avec tags et recherche.'
     },
     tags: ['React', 'Node', 'Express'],
-    demo: 'https://your-demo-url.com/keeper',
-    repo: 'https://github.com/your-username/keeper',
+    demo: 'https://keeper.sarah-tech-lab.ch',
+    repo: 'https://github.com/sarahquartetto/keeper-app',
     image: notesImg
   },
   {
@@ -28,8 +28,8 @@ const projects = [
       fr: 'Un site qui répertorie tous les teckels de Suisse.'
     },
     tags: ['Vite', 'React', 'CSS'],
-    demo: 'https://your-portfolio-url.com',
-    repo: 'https://github.com/your-username/portfolio',
+    demo: 'https://teckels.sarah-tech-lab.ch',
+    repo: 'https://github.com/sarahquartetto/swiss-teckels',
     image: teckelImg
   }
 ]
