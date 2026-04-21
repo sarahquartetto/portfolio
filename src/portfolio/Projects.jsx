@@ -21,7 +21,23 @@ export default function Projects() {
               const description = project?.description?.[language] ?? project?.description?.en ?? project?.description
 
               return (
-            <div key={project.slug} className="group overflow-hidden rounded-3xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500 border border-stone-200/50">
+            <div
+              key={project.slug}
+              className={`group overflow-hidden rounded-3xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500 border border-stone-200/50 ${project.demo ? 'cursor-pointer' : ''}`}
+              role={project.demo ? 'link' : undefined}
+              tabIndex={project.demo ? 0 : undefined}
+              onClick={() => {
+                if (!project.demo) return
+                window.open(project.demo, '_blank', 'noopener,noreferrer')
+              }}
+              onKeyDown={(e) => {
+                if (!project.demo) return
+                if (e.key !== 'Enter' && e.key !== ' ') return
+                e.preventDefault()
+                window.open(project.demo, '_blank', 'noopener,noreferrer')
+              }}
+              aria-label={project.demo ? `${title} — live demo` : undefined}
+            >
               <div className="aspect-video overflow-hidden bg-gradient-to-br from-stone-200 to-amber-100 relative">
                 {project.image ? (
                   <img 
@@ -56,12 +72,26 @@ export default function Projects() {
                   </div>
                   <div className="flex gap-2">
                     {project.demo && (
-                      <a href={project.demo} target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-stone-100 hover:bg-amber-100 text-stone-600 hover:text-amber-700 transition-all duration-300 hover:scale-110" aria-label="Live demo">
+                      <a
+                        href={project.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                        className="p-2 rounded-full bg-stone-100 hover:bg-amber-100 text-stone-600 hover:text-amber-700 transition-all duration-300 hover:scale-110"
+                        aria-label="Live demo"
+                      >
                         <ExternalLink className="w-5 h-5" />
                       </a>
                     )}
                     {project.repo && (
-                      <a href={project.repo} target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-stone-100 hover:bg-amber-100 text-stone-600 hover:text-amber-700 transition-all duration-300 hover:scale-110" aria-label="GitHub repo">
+                      <a
+                        href={project.repo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                        className="p-2 rounded-full bg-stone-100 hover:bg-amber-100 text-stone-600 hover:text-amber-700 transition-all duration-300 hover:scale-110"
+                        aria-label="GitHub repo"
+                      >
                         <Github className="w-5 h-5" />
                       </a>
                     )}
