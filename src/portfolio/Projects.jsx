@@ -1,6 +1,6 @@
 import React from 'react'
 import projects from '../projectData.js'
-import { ExternalLink, Github, Tag } from 'lucide-react'
+import { Github, Tag } from 'lucide-react'
 import { useLanguage } from '../contexts/LanguageContext'
 
 export default function Projects() {
@@ -71,18 +71,6 @@ export default function Projects() {
                     )}
                   </div>
                   <div className="flex gap-2">
-                    {project.demo && (
-                      <a
-                        href={project.demo}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        onClick={(e) => e.stopPropagation()}
-                        className="p-2 rounded-full bg-stone-100 hover:bg-amber-100 text-stone-600 hover:text-amber-700 transition-all duration-300 hover:scale-110"
-                        aria-label="Live demo"
-                      >
-                        <ExternalLink className="w-5 h-5" />
-                      </a>
-                    )}
                     {project.repo && (
                       <a
                         href={project.repo}
